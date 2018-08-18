@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<title>アコーディオン練習</title>
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+
+			$('.glyphicon').on("click", function() {
+				if ($(this).hasClass('.active')) {
+					$(this).removeClass(('.active'));
+					$(this).removeClass('glyphicon-chevron-up')
+					$(this).addClass('glyphicon-chevron-down');
+				}else {
+					$(this).addClass(('.active'));
+					$(this).removeClass('glyphicon-chevron-down')
+					$(this).addClass('glyphicon-chevron-up');
+
+				}
+				$(this).next('ul').slideToggle();
+			});
+		});
+	</script>
+	<div>
+		<div class="inline-block"><a href="#">20180817</a></div>
+
+		<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" class="active"></span>
+		<ul class="sample">
+			<li><a href="#">リンク1</a></li>
+			<li><a href="#">リンク2</a></li>
+			<li><a href="#">リンク3</a></li>
+		</ul>
+	</div>
+	<div>
+		<div class="inline-block"><a href="#">20180817</a></div>
+		<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+		<!-- <div class="btn">＋</div> -->
+		<ul class="sample">
+			<li><a href="#">リンク1</a></li>
+			<li><a href="#">リンク2</a></li>
+			<li><a href="#">リンク3</a></li>
+		</ul>
+	</div>
+	<div>
+		<div class="inline-block"><a href="#">20180817</a></div>
+		<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+		<!-- <div class="btn">＋</div> -->
+		<ul class="sample">
+			<li><a href="#">リンク1</a></li>
+			<li><a href="#">リンク2</a></li>
+			<li><a href="#">リンク3</a></li>
+		</ul>
+	</div>
+</body>
+</html>

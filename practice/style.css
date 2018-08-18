@@ -1,0 +1,14 @@
+.btn {
+    display: inline-block;
+    text-align:center;
+    cursor:pointer;
+}
+.inline-block {
+    display: inline-block;
+}
+.sample {
+    display: none;
+}
+li {
+    list-style: none;
+}
